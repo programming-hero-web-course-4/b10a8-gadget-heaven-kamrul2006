@@ -1,15 +1,18 @@
-# <img wight='20px' src="https://img.icons8.com/stickers/50/multiple-devices.png"> Gadget Heaven✨
+# <img wight='15px' src="https://img.icons8.com/stickers/50/multiple-devices.png"> Gadget Heaven✨
 
 **💐Welcome to GadgetHaven !** I Develop a e-commerce platform for GadgetHaven, a gadget-buying
 website, based on a detailed Figma design. The site features a structured
 navigation bar, product categories, and individual product details pages. Key
 functionalities include a shopping cart, a wishlist system, and product filtering etc.😊
 
-**Live Site Link**
-***[https://kamrul-gadget-haven-ass8.netlify.app/]***
+**Live Site Link:** 
+- ***[https://kamrul-gadget-haven-ass8.netlify.app/]***
 
-**Requirement Document Link**
-***[https://github.com/ProgrammingHero1/B10-A8-gadget-heaven/blob/main/Batch-10_Assignment-08-.pdf]***
+**Privet Repository Link:** 
+- ***[https://github.com/programming-hero-web-course-4/b10a8-gadget-heaven-kamrul2006]***
+
+**Requirement Document Link:** 
+- ***[https://github.com/ProgrammingHero1/B10-A8-gadget-heaven/blob/main/Batch-10_Assignment-08-.pdf]***
 
 --------------------------------------------------
 

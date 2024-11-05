@@ -1,7 +1,7 @@
 /* eslint-disable no-unused-vars */
 /* eslint-disable react-hooks/exhaustive-deps */
 import { useContext, useEffect, useState } from "react";
-import { useLoaderData } from "react-router-dom";
+import { Link, useLoaderData } from "react-router-dom";
 import { RxMixerHorizontal } from "react-icons/rx";
 import { IoRemoveCircleOutline } from "react-icons/io5";
 import { addToStoreCartList, getStoreCartList, RemoveCart } from "../../Utility/AddToCart";
@@ -39,7 +39,8 @@ const Dashboard = () => {
     const allProducts = useLoaderData()
     const [cartList, setCartList] = useState([])
     const [wishList, setWishList] = useState([])
-
+    const [dis, setDis] = useState(false)
+    let tCost = 0;
 
     useEffect(() => {
         const storedList = getStoreCartList();
@@ -83,17 +84,26 @@ const Dashboard = () => {
         const sortedList = [...cartList].sort((a, b) => b.price - a.price)
         setCartList(sortedList)
     }
-
-
     // -------add to cart from wihs list------------------------
     const HandleAddCart = (id) => {
         addToStoreCartList(id)
     }
     //----------------------------cost--------------------------
-    let tCost = 0;
+
     for (let pr = 0; pr < cartList.length; pr++) {
         tCost += cartList[pr].price || 0
     }
+
+    const Total = tCost
+    console.log(cartList.length)
+    useEffect(() => {
+        if (cartList.length) {
+            setDis(false)
+        }
+        else {
+            setDis(true)
+        }
+    })
 
     // const { product_title, product_image, price, description, specification, availability, rating } = 
 
@@ -135,8 +145,11 @@ const Dashboard = () => {
                             <h1 className="text-xl font-bold">Total Costs: {tCost} $</h1>
 
                             <div className="flex items-center gap-5">
-                                <button onClick={HandleSort} className="px-4 py-1 border-2 border-sky-500 text-sky-500 font-bold rounded-full flex items-center gap-2">Sort by Price <RxMixerHorizontal /></button>
-                                <button className="px-4 rounded-full bg-sky-500 text-white py-1 font-bold">Purchase</button>
+                                <button onClick={HandleSort} className="px-4 py-1  border border-sky-500 text-sky-500 font-bold rounded-full flex items-center gap-2 hover:bg-sky-100">Sort by Price <RxMixerHorizontal /></button>
+
+
+
+                                <button disabled={dis} onClick={() => document.getElementById('my_modal_5').showModal()} className="px-10 btn-sm rounded-full font-bold btn btn-outline btn-info">Purchase</button>
                             </div>
                         </div>
 
@@ -186,6 +199,24 @@ const Dashboard = () => {
             <div className="hidden">
                 <Nav cartList={cartList}></Nav>
             </div>
+
+
+            {/* Open the modal using document.getElementById('ID').showModal() method */}
+
+
+            <dialog id="my_modal_5" className="modal modal-bottom sm:modal-middle">
+                <div className="modal-box">
+                    <h3 className="font-bold text-lg">Hello!</h3>
+                    <p className="py-4">Press ESC key or click the button below to close</p>
+                    <div className="modal-action">
+                        <form method="dialog">
+                            {/* if there is a button in form, it will close the modal */}
+                            <Link to={'/'}><button className="btn">Close</button></Link>
+                        </form>
+                    </div>
+                </div>
+            </dialog>
+
         </div>
     );
 };
