@@ -1,8 +1,12 @@
 import { useEffect } from "react";
 import Products from "./Products";
+import { Link, useLoaderData } from "react-router-dom";
+
 
 
 const Banner = () => {
+
+    const Items=useLoaderData()
 
     useEffect(() => {
         document.title = 'Home | Gadget Heaven'
@@ -23,7 +27,8 @@ const Banner = () => {
                             <p className="px-56">
                                 Explore the latest gadgets that will take your experience to the next level. From smart devices to the coolest accessories, we have it all!
                             </p>
-                            <button className="text-purple-500 bg-white px-5 py-2 rounded-full font-bold">Shop Now</button>
+                            <Link to={'/dashboard'}>
+                            <button className="text-purple-500 bg-white px-5 py-2 rounded-full font-bold">Shop Now</button></Link>
                         </div>
 
                         {/* ---------------googles---------------------------------- */}
@@ -36,7 +41,7 @@ const Banner = () => {
                 </div>
             </div>
             <h1 className="text-3xl text-center font-bold">Explore Cutting-Edge Gadgets</h1>
-           <Products></Products>
+           <Products Items={Items}></Products>
         </section>
 
 

@@ -8,7 +8,7 @@ const Nav = () => {
         <li>  <Link to={'/'}>Home</Link></li>
         <li>  <Link to={'/statistics'}>Statistics</Link></li>
         <li>  <Link to={'/dashboard'}>Dashboard</Link></li>
-        <li>  <Link to={'/about'}>About us</Link></li>
+        <li>  <Link to={'/aboutUs'}>About us</Link></li>
     </>
 
     const homeUrl = useLocation().pathname;
@@ -34,12 +34,14 @@ const Nav = () => {
                 </ul>
             </div>
             <div className="navbar-end flex items-center gap-3">
-                <a className="btn btn-sm md:btn-md btn-circle btn-outLine">
-                    <FaCartArrowDown className="text-xl md:text-2xl" />
-                </a>
-                <a className="btn btn-sm md:btn-md btn-circle btn-outLine">
-                    <FaHeart className="text-xl md:text-2xl" />
-                </a>
+                <Link to={'/dashboard'}>
+                    <a className="btn btn-sm md:btn-md btn-circle btn-outLine">
+                        <FaCartArrowDown className="text-xl md:text-2xl" />
+                    </a></Link>
+                <Link to={'/dashboard'}>
+                    <a className="btn btn-sm md:btn-md btn-circle btn-outLine">
+                        <FaHeart className="text-xl md:text-2xl" />
+                    </a></Link>
             </div>
         </div>
     );

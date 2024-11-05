@@ -1,0 +1,392 @@
+[
+  {
+    "product_id": "11",
+    "product_title": "Apple MacBook Air M2",
+    "product_image": "https://static1.pocketlintimages.com/wordpress/wp-content/uploads/wm/161396-laptops-review-hands-on-macbook-air-review-image1-v2jzcb3rqd.jpg",
+    "category": "Laptops",
+    "price": 1199,
+    "description": "The sleek and powerful MacBook Air with the new M2 chip, offering fast performance and impressive battery life.",
+    "specification": [
+      "13.6-inch Retina display",
+      "Apple M2 chip",
+      "8GB RAM, 256GB SSD",
+      "Up to 18 hours battery life",
+      "720p FaceTime HD camera"
+    ],
+    "availability": true,
+    "rating": 4.8
+  },
+  {
+    "product_id": "12",
+    "product_title": "Dell XPS 15",
+    "product_image": "https://i.ytimg.com/vi/SsMrGGgcdrU/maxresdefault.jpg",
+    "category": "Laptops",
+    "price": 1899,
+    "description": "High-performance laptop with stunning display and powerful Intel i7 processor.",
+    "specification": [
+      "15.6-inch UHD+ display",
+      "Intel i7 11th Gen",
+      "16GB RAM, 512GB SSD",
+      "NVIDIA GTX 1650",
+      "Windows 11"
+    ],
+    "availability": true,
+    "rating": 4.7
+  },
+  {
+    "product_id": "22",
+    "product_title": "Apple Watch Series 7",
+    "product_image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSgOWHKu81obp3GX1Es8DdBHp9bEgiw-NylJg&s",
+    "category": "Smart Watches",
+    "price": 399,
+    "description": "The latest Apple Watch with larger display, ECG app, and improved durability.",
+    "specification": [
+      "Always-on Retina display",
+      "ECG and blood oxygen apps",
+      "Up to 18 hours battery life",
+      "Water resistant to 50 meters",
+      "Available in 41mm and 45mm sizes"
+    ],
+    "availability": true,
+    "rating": 4.8
+  },
+  {
+    "product_id": "23",
+    "product_title": "Fitbit Versa 3",
+    "product_image": "https://cdn.mos.cms.futurecdn.net/dnnTRMX4pmM5gw8tDpT5tW.jpg",
+    "category": "Smart Watches",
+    "price": 229,
+    "description": "Advanced health smartwatch with built-in GPS, sleep tracking, and 6-day battery life.",
+    "specification": [
+      "AMOLED display",
+      "24/7 heart rate monitoring",
+      "Built-in GPS",
+      "Water-resistant up to 50m",
+      "Up to 6 days battery life"
+    ],
+    "availability": true,
+    "rating": 4.5
+  },
+  {
+    "product_id": "24",
+    "product_title": "Sony WF-1000XM4",
+    "product_image": "https://www.cnet.com/a/img/resize/ff24a85b18ab5aa0a35ea6702e8d0cf940d749ed/hub/2021/06/07/b2c44adf-5e2b-4e2a-afeb-c18c7120b137/sony-wf-1000xm4-2.jpg?auto=webp&width=1200",
+    "category": "Accessories",
+    "price": 279,
+    "description": "Industry-leading noise-canceling earbuds with high-resolution audio and 8 hours of playback.",
+    "specification": [
+      "Active noise cancellation",
+      "High-resolution audio",
+      "Speak-to-chat technology",
+      "IPX4 water resistance",
+      "Up to 8 hours of listening time"
+    ],
+    "availability": true,
+    "rating": 4.7
+  },
+  {
+    "product_id": "25",
+    "product_title": "Samsung Galaxy Buds Pro",
+    "product_image": "https://cdn.mos.cms.futurecdn.net/3aQjGeXny7euTXggR8xBLW.jpg",
+    "category": "Accessories",
+    "price": 199,
+    "description": "Premium wireless earbuds with intelligent active noise cancellation and immersive sound.",
+    "specification": [
+      "Intelligent active noise cancellation",
+      "11mm woofer & 6.5mm tweeter",
+      "IPX7 water resistance",
+      "3D audio with Dolby Atmos",
+      "Up to 5 hours of playback"
+    ],
+    "availability": true,
+    "rating": 4.6
+  },
+  {
+    "product_id": "13",
+    "product_title": "HP Spectre x360",
+    "product_image": "https://techstore.co.in/cdn/shop/articles/Hp-Spectre-07.jpg?v=1487510918",
+    "category": "Laptops",
+    "price": 1299,
+    "description": "Premium 2-in-1 laptop with powerful performance and vibrant display.",
+    "specification": [
+      "13.3-inch 4K OLED touchscreen",
+      "Intel i7 11th Gen",
+      "16GB RAM, 512GB SSD",
+      "Windows 10 Pro",
+      "Wi-Fi 6"
+    ],
+    "availability": true,
+    "rating": 4.7
+  },
+  {
+    "product_id": "14",
+    "product_title": "Microsoft Surface Laptop 4",
+    "product_image": "https://www.trustedreviews.com/wp-content/uploads/sites/54/2021/06/Surface-Laptop-4-17-scaled-e1625054608581-1024x684.jpg",
+    "category": "Laptops",
+    "price": 999,
+    "description": "Versatile and powerful laptop with touchscreen display and Intel i5 processor.",
+    "specification": [
+      "13.5-inch PixelSense touchscreen",
+      "Intel i5 11th Gen",
+      "8GB RAM, 256GB SSD",
+      "Up to 17 hours battery life",
+      "Windows 10 Home"
+    ],
+    "availability": true,
+    "rating": 4.6
+  },
+  {
+    "product_id": "15",
+    "product_title": "Lenovo ThinkPad X1 Carbon",
+    "product_image": "https://p1-ofp.static.pub/fes/cms/2022/06/20/1zkqoabvzhwrx9uh2p4cwi64tfb1k0528871.png",
+    "category": "Laptops",
+    "price": 1399,
+    "description": "A lightweight, business-oriented laptop with robust security features and long battery life.",
+    "specification": [
+      "14-inch FHD display",
+      "Intel i7 11th Gen",
+      "16GB RAM, 512GB SSD",
+      "Fingerprint reader",
+      "Windows 10 Pro"
+    ],
+    "availability": true,
+    "rating": 4.8
+  },
+  {
+    "product_id": "16",
+    "product_title": "ASUS ZenBook Duo 14",
+    "product_image": "https://i3.ytimg.com/vi/mvvrzvDHykE/maxresdefault.jpg",
+    "category": "Laptops",
+    "price": 1499,
+    "description": "Innovative dual-screen laptop with a ScreenPad Plus for multitasking.",
+    "specification": [
+      "14-inch FHD NanoEdge touchscreen",
+      "Intel i7 11th Gen",
+      "16GB RAM, 1TB SSD",
+      "Secondary 12.6-inch ScreenPad Plus",
+      "Windows 10 Home"
+    ],
+    "availability": true,
+    "rating": 4.5
+  },
+  {
+    "product_id": "17",
+    "product_title": "Apple iPhone 13 Pro",
+    "product_image": "https://images-cdn.ubuy.co.id/64dc1dbacb432b7bec5203e4-open-box-apple-iphone-13-pro-max-a2484.jpg",
+    "category": "iPhone",
+    "price": 999,
+    "description": "A powerful iPhone with Pro features like 5G connectivity, A15 Bionic, and ProMotion display.",
+    "specification": [
+      "6.1-inch OLED display",
+      "A15 Bionic chip",
+      "Triple 12MP camera system",
+      "5G enabled",
+      "128GB storage"
+    ],
+    "availability": true,
+    "rating": 4.9
+  },
+  {
+    "product_id": "18",
+    "product_title": "Samsung Galaxy S22",
+    "product_image": "https://i5.walmartimages.com/seo/Samsung-Galaxy-S22-Plus-5G-SM-S906U1-128GB-Black-US-Model-Factory-Unlocked-Cell-Phone_f63e69b8-e85a-4ed2-8424-9943a6d8b229.939e2b8a6ab977694978dd3256c9ac92.jpeg",
+    "category": "Phones",
+    "price": 799,
+    "description": "Flagship Samsung smartphone with a sleek design and powerful camera.",
+    "specification": [
+      "6.1-inch AMOLED display",
+      "Exynos 2200",
+      "Triple-lens camera",
+      "5G enabled",
+      "128GB storage"
+    ],
+    "availability": true,
+    "rating": 4.6
+  },
+  {
+    "product_id": "19",
+    "product_title": "Apple iPhone 14",
+    "product_image": "https://istockbd.com/cdn/shop/products/iPhone14PluspriceinBangladesh.jpg?v=1678349977&width=600",
+    "category": "iPhone",
+    "price": 799,
+    "description": "The latest iPhone with improved camera system and A15 Bionic performance.",
+    "specification": [
+      "6.1-inch OLED display",
+      "A15 Bionic chip",
+      "Dual 12MP camera system",
+      "5G enabled",
+      "128GB storage"
+    ],
+    "availability": true,
+    "rating": 4.8
+  },
+  {
+    "product_id": "20",
+    "product_title": "Apple iPhone 14 Pro Max",
+    "product_image": "https://i.ebayimg.com/images/g/NawAAOSwj4dkghOz/s-l1200.jpg",
+    "category": "iPhone",
+    "price": 1099,
+    "description": "The best iPhone with ProMotion display, A16 Bionic chip, and advanced camera features.",
+    "specification": [
+      "6.7-inch OLED display",
+      "A16 Bionic chip",
+      "48MP triple-lens camera",
+      "5G enabled",
+      "256GB storage"
+    ],
+    "availability": true,
+    "rating": 4.9
+  },
+  {
+    "product_id": "21",
+    "product_title": "Apple AirPods Pro",
+    "product_image": "https://i0.wp.com/www.ear-fidelity.com/wp-content/uploads/2022/10/P1054788s-scaled.jpg?fit=2560%2C1707&ssl=1",
+    "category": "Accessories",
+    "price": 249,
+    "description": "Noise-canceling earbuds with transparency mode and high-fidelity audio.",
+    "specification": [
+      "Active noise cancellation",
+      "Transparency mode",
+      "Adaptive EQ",
+      "Sweat and water resistant",
+      "Up to 4.5 hours of listening time"
+    ],
+    "availability": true,
+    "rating": 4.7
+  },
+  {
+    "product_id": "26",
+    "product_title": "Samsung Galaxy Z Fold 4",
+    "product_image": "https://cdn.jagonews24.com/media/imgAllNew/BG/2019November/samsung-20220905195616.jpg",
+    "category": "Phones",
+    "price": 1799,
+    "description": "Innovative foldable smartphone with a large, immersive screen and multi-tasking features.",
+    "specification": [
+      "7.6-inch QXGA+ Dynamic AMOLED 2X main display",
+      "Snapdragon 8+ Gen 1",
+      "Triple rear camera (50MP, 12MP, 10MP)",
+      "5G connectivity",
+      "256GB storage"
+    ],
+    "availability": true,
+    "rating": 4.6
+  },
+  {
+    "product_id": "27",
+    "product_title": "Samsung Galaxy A53 5G",
+    "product_image": "https://www.androidauthority.com/wp-content/uploads/2022/04/samsung-galaxy-a53-standing.jpg",
+    "category": "Phones",
+    "price": 449,
+    "description": "Affordable 5G smartphone with a vibrant display and long-lasting battery.",
+    "specification": [
+      "6.5-inch FHD+ Super AMOLED display",
+      "Exynos 1280",
+      "Quad rear camera (64MP, 12MP, 5MP, 5MP)",
+      "5G connectivity",
+      "128GB storage, expandable"
+    ],
+    "availability": true,
+    "rating": 4.5
+  },
+  {
+    "product_id": "29",
+    "product_title": "Samsung Galaxy Watch 5 Pro",
+    "product_image": "https://miro.medium.com/v2/resize:fit:1400/format:webp/1*9l9YsrP7OoLYRJqpTiT7HA.png",
+    "category": "Smart Watches",
+    "price": 449,
+    "description": "Advanced smartwatch with fitness tracking, GPS, and long battery life, designed for outdoor enthusiasts.",
+    "specification": [
+      "1.4-inch Super AMOLED display",
+      "Sapphire crystal glass",
+      "GPS and route tracking",
+      "Heart rate and sleep monitoring",
+      "Up to 80 hours battery life"
+    ],
+    "availability": true,
+    "rating": 4.6
+  },
+  {
+    "product_id": "30",
+    "product_title": "Samsung Galaxy J5 Prime",
+    "product_image": "https://149367133.v2.pressablecdn.com/wp-content/uploads/2017/05/Samsung-Galaxy-J5-Prime-feature-image.jpg",
+    "category": "Phones",
+    "price": 150,
+    "description": "Samsung Galaxy J5 Prime with a sleek design, compact size, and essential smartphone features.",
+    "specification": [
+      "5.0-inch HD display",
+      "Quad-core 1.4 GHz processor",
+      "2GB RAM, 16GB internal storage",
+      "13MP rear camera, 5MP front camera",
+      "2400 mAh battery"
+    ],
+    "availability": true,
+    "rating": 4.1,
+    "yearOfRelease": 2016,
+    "operatingSystem": "Android 6.0 (Marshmallow)"
+  },
+  {
+    "product_id": "31",
+    "product_title": "Huawei Watch Buds Smart Watch",
+    "product_image": "https://cdn.mos.cms.futurecdn.net/iBDrnHdi3Zn3tnaqNfvPjH-1920-80.jpg.webp",
+    "category": "Smart Watches",
+    "price": 299,
+    "description": "Huawei Watch Buds Smart Watch with integrated earbuds, providing convenience and multifunctionality for an active lifestyle.",
+    "specification": [
+      "1.43-inch AMOLED display",
+      "Integrated earbuds stored in the watch case",
+      "24/7 heart rate and SpO2 monitoring",
+      "Battery life up to 3 days with earbuds",
+      "Water-resistant design",
+      "Bluetooth connectivity for calls and music"
+    ],
+    "availability": true,
+    "rating": 4.5,
+    "yearOfRelease": 2023,
+    "operatingSystem": "HarmonyOS"
+  },
+  {
+    "product_id": "32",
+    "product_title": "M20 TWS Wireless Earbuds",
+    "product_image": "https://rukminim2.flixcart.com/image/750/900/xif0q/headphone/a/s/x/latest-edition-m20-tws-sports-earphones-touch-control-dual-led-original-imagg6vxbsygpgpw.jpeg?q=20&crop=false",
+    "category": "Accessories",
+    "price": 45,
+    "description": "M20 TWS Wireless Earbuds with Bluetooth 5.0 technology, providing high-quality sound and a secure, comfortable fit for daily use.",
+    "specification": [
+      "Bluetooth 5.0 connectivity",
+      "Up to 4 hours of playback time per charge",
+      "Charging case provides an additional 12 hours of battery life",
+      "IPX5 water resistance",
+      "Touch controls for music and calls",
+      "Compatible with iOS and Android devices"
+    ],
+    "availability": true,
+    "rating": 4.2,
+    "yearOfRelease": 2022,
+    "batteryLife": "4 hours per charge (16 hours with charging case)"
+  },
+  {
+    "product_id": "33",
+    "product_title": "iPhone 16",
+    "product_image": "https://i.ytimg.com/vi/f13XTEQLBMQ/maxresdefault.jpg",
+    "category": "iPhone",
+    "price": 1199,
+    "description": "The latest iPhone 16 with advanced camera system, powerful A-series chip, and sleek design, offering unmatched performance and stunning visuals.",
+    "specification": [
+      "6.5-inch Super Retina XDR display",
+      "A18 Bionic chip with next-gen Neural Engine",
+      "Triple-lens 48MP Pro Camera system",
+      "5G connectivity",
+      "Up to 1TB storage options",
+      "Face ID and Ceramic Shield front cover",
+      "iOS 17"
+    ],
+    "availability": true,
+    "rating": 4.8,
+    "yearOfRelease": 2024,
+    "operatingSystem": "iOS 17",
+    "batteryLife": "Up to 24 hours talk time",
+    "waterResistance": "IP68 dust/water resistant (up to 6m for 30 mins)"
+  }
+  
+  
+]

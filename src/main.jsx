@@ -7,30 +7,44 @@ import {
 } from "react-router-dom";
 import Root from './components/Root/Root';
 import Banner from './components/pages/Banner';
-
+import Error from './components/Fixed/error';
+import Details from './components/pages/Deatails';
+import { ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+import Dashboard from './components/pages/Dashboard';
+import Statistics from './components/pages/Statistics';
+import About from './components/pages/About';
 
 
 const router = createBrowserRouter([
   {
     path: "/",
     element: <Root></Root>,
-    errorElement: <div>404</div>,
+    errorElement: <Error></Error>,
     children: [
       {
         path: '/',
+        loader: () => fetch("/AllProducts.json"),
         element: <Banner></Banner>
       },
       {
+        path: '/product/:Id',
+        loader: () => fetch("/AllProducts.json"),
+        element: <Details></Details>
+      },
+      {
         path: '/statistics',
-        element: <div>hiiiiiiiii</div>
+        loader: () => fetch("/AllProducts.json"),
+        element: <Statistics></Statistics>
       },
       {
         path: '/dashboard',
-        element: <div>hiiiiiiiii  gggggg</div>
+        loader: () => fetch("/AllProducts.json"),
+        element: <Dashboard/>
       },
       {
-        path: '/about',
-        element: <div>hiiiiiiiii  gggggg    hhhh</div>
+        path: '/aboutUs',
+        element: <About></About>
       },
     ]
   },
@@ -41,5 +55,6 @@ const router = createBrowserRouter([
 createRoot(document.getElementById('root')).render(
   <StrictMode>
     <RouterProvider router={router} />
+    <ToastContainer />
   </StrictMode>,
 )
