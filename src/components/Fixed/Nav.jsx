@@ -1,8 +1,25 @@
 import { FaCartArrowDown, FaHeart } from "react-icons/fa";
 import { CgMenuRound } from "react-icons/cg";
 import { Link, useLocation } from "react-router-dom";
+import { useContext, useEffect } from "react";
+import { getStoreCartList } from "../../Utility/AddToCart";
+import { ItemContext } from "../Root/Root";
+
+
+
 
 const Nav = () => {
+
+    const [item, setItem] = useContext(ItemContext)
+
+
+    useEffect(() => {
+        const storedList = getStoreCartList();
+        setItem(storedList)
+        // console.log(Stored)
+    }, [])
+
+
 
     const Links = <>
         <li>  <Link to={'/'}>Home</Link></li>
@@ -26,7 +43,7 @@ const Nav = () => {
                         {Links}
                     </ul>
                 </div>
-                <a className="md:text-2xl text-lg font-bold font-serif">Gadget <span className="text-blue-400">Heaven</span> </a>
+                <button className="md:text-2xl text-lg font-bold font-serif">Gadget <span className="text-blue-400">Heaven</span> </button>
             </div>
             <div className="navbar-center hidden lg:flex">
                 <ul className="menu text-lg menu-horizontal px-1">
@@ -34,14 +51,19 @@ const Nav = () => {
                 </ul>
             </div>
             <div className="navbar-end flex items-center gap-3">
+                <div className="indicator">
+                    <Link to={'/dashboard'}>
+                        <button className="btn btn-sm md:btn-md btn-circle btn-outLine">
+                            <FaCartArrowDown className="text-xl md:text-2xl" />
+                        </button></Link>
+                    <span className="badge badge-sm badge-outline rounded-full badge-warning indicator-item">{item.length}</span>
+                </div>
+
+
                 <Link to={'/dashboard'}>
-                    <a className="btn btn-sm md:btn-md btn-circle btn-outLine">
-                        <FaCartArrowDown className="text-xl md:text-2xl" />
-                    </a></Link>
-                <Link to={'/dashboard'}>
-                    <a className="btn btn-sm md:btn-md btn-circle btn-outLine">
+                    <button className="btn btn-sm md:btn-md btn-circle btn-outLine">
                         <FaHeart className="text-xl md:text-2xl" />
-                    </a></Link>
+                    </button></Link>
             </div>
         </div>
     );

@@ -40,7 +40,7 @@ const Banner = () => {
                     </div>
                 </div>
             </div>
-            <h1 className="text-3xl text-center font-bold">Explore Cutting-Edge Gadgets</h1>
+            <h1 id="pro" className="text-3xl text-center font-bold">Explore Cutting-Edge Gadgets</h1>
            <Products Items={Items}></Products>
         </section>
 

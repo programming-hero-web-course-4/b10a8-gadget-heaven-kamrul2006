@@ -1,11 +1,13 @@
+/* eslint-disable no-unused-vars */
 /* eslint-disable react/prop-types */
-import { useEffect } from "react";
+import {  useEffect } from "react";
 import { useState } from "react";
 import { FaLaptop, FaMobile, FaApple } from "react-icons/fa";
 import { IoWatch } from "react-icons/io5";
 import { TbDeviceAirpodsCase } from "react-icons/tb";
 import { FcParallelTasks } from "react-icons/fc";
 import { Link } from "react-router-dom";
+
 
 const Products = ({ Items }) => {
     const products = Items
@@ -41,7 +43,7 @@ const Products = ({ Items }) => {
         const Watches = products.filter(Watch => Watch.category === 'Smart Watches')
         setAllProduct(Watches)
     }
-
+  
 
 
 

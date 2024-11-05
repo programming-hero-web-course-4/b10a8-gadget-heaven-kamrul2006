@@ -1,4 +1,9 @@
+
 import { toast } from "react-toastify";
+
+
+
+
 
 const getStoreCartList = () => {
     const stoRedListStr = localStorage.getItem('cart-list')
@@ -44,15 +49,15 @@ const addToStoreCartList = (id) => {
 }
 
 const RemoveCart = (id) => {
-    const ida=parseInt(id)
+    const ida = parseInt(id)
     let storedList = JSON.parse(localStorage.getItem('cart-list')) || []
     storedList = storedList.filter(ib => ib != ida)
     const removedString = JSON.stringify(storedList);
     localStorage.setItem('cart-list', removedString);
     // console.log(typeof (ida), ida, storedList, removedString, storedList)
 
-     // toast------------
-     toast.warn('Product removed From cart !', {
+    // toast------------
+    toast.warn('Product removed From cart !', {
         position: "top-center",
         autoClose: 1000,
         hideProgressBar: true,
@@ -61,7 +66,7 @@ const RemoveCart = (id) => {
         draggable: true,
         progress: undefined,
         theme: "colored",
-        });
+    });
 }
 
-export { addToStoreCartList, getStoreCartList ,RemoveCart}
+export { addToStoreCartList, getStoreCartList, RemoveCart }

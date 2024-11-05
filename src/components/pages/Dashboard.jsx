@@ -1,17 +1,20 @@
+/* eslint-disable no-unused-vars */
 /* eslint-disable react-hooks/exhaustive-deps */
-import { useEffect, useState } from "react";
+import { useContext, useEffect, useState } from "react";
 import { useLoaderData } from "react-router-dom";
 import { RxMixerHorizontal } from "react-icons/rx";
 import { IoRemoveCircleOutline } from "react-icons/io5";
 import { addToStoreCartList, getStoreCartList, RemoveCart } from "../../Utility/AddToCart";
 import { getStoreWishList, RemoveWish } from "../../Utility/AddtoWish";
+import Nav from "../Fixed/Nav";
+import { ItemContext } from "../Root/Root";
 
 
 const Dashboard = () => {
     useEffect(() => {
         document.title = 'DashBoard | Gadget Heaven'
     }, [])
-
+    const [item, setItem] = useContext(ItemContext)
 
     // ----------------handle Toggle----------------
     const [isActive, setIsActive] = useState({
@@ -36,6 +39,7 @@ const Dashboard = () => {
     const allProducts = useLoaderData()
     const [cartList, setCartList] = useState([])
     const [wishList, setWishList] = useState([])
+
 
     useEffect(() => {
         const storedList = getStoreCartList();
@@ -62,6 +66,7 @@ const Dashboard = () => {
 
         const CardList = allProducts.filter(pro => Stored.includes(parseInt(pro.product_id)));
         setCartList(CardList)
+        setItem(CardList)
     }
     // --------------------handle remove Wish-----------------
     const handleRemoveWish = (id) => {
@@ -178,7 +183,9 @@ const Dashboard = () => {
                         </div>)}
                     </div>}
             </div>
-
+            <div className="hidden">
+                <Nav cartList={cartList}></Nav>
+            </div>
         </div>
     );
 };

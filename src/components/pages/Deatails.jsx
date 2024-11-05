@@ -1,13 +1,17 @@
-import { useEffect, useState } from "react";
+import { useContext, useEffect, useState } from "react";
 import { useLoaderData, useParams } from "react-router-dom";
 import { FaCartPlus, FaHeart } from "react-icons/fa";
-import { addToStoreCartList } from "../../Utility/AddToCart";
+import { getStoreCartList } from "../../Utility/AddToCart";
 import { addToStoreWishList } from "../../Utility/AddtoWish";
+import { ItemContext } from "../Root/Root";
+import { toast } from "react-toastify";
 
 const Details = () => {
     useEffect(() => {
         document.title = 'Details | Gadget Heaven'
     }, [])
+
+    const [item, setItem] = useContext(ItemContext)
 
     const { Id } = useParams()
     // console.log(Id)
@@ -15,15 +19,46 @@ const Details = () => {
     // console.log(data)
     const Product = data.find(item => item.product_id == Id)
     // console.log(Product)
-const [dis,setDis]=useState(false)
+    const [dis, setDis] = useState(false)
+    const [disW, setDisW] = useState(false)
 
-    const HandleAddCart=(id)=>{
-        addToStoreCartList(id)
+    const HandleAddCart = (id) => {
+
+        const storedList = getStoreCartList()
+        if (storedList.includes(id)) {
+            toast.error('Product Already exist in Cart !', {
+                position: "top-center",
+                autoClose: 2000,
+                hideProgressBar: true,
+                closeOnClick: true,
+                pauseOnHover: false,
+                draggable: true,
+                progress: undefined,
+                theme: "colored",
+            });
+        }
+        else {
+            storedList.push(id);
+            const stoRedListStr = JSON.stringify(storedList);
+            localStorage.setItem('cart-list', stoRedListStr);
+            setItem([...item, id])
+            toast.success('Product Added in Cart !', {
+                position: "top-center",
+                autoClose: 2000,
+                hideProgressBar: true,
+                closeOnClick: true,
+                pauseOnHover: false,
+                draggable: true,
+                progress: undefined,
+                theme: "colored",
+            });
+        }
         setDis(true)
     }
 
     const HandleAddWish = (id) => {
         addToStoreWishList(id)
+        setDisW(true)
     }
 
     const { product_title, product_image, price, description, specification, availability, rating } = Product
@@ -77,9 +112,9 @@ const [dis,setDis]=useState(false)
                                 <div className="flex items-center gap-7 mt-5">
                                     <button disabled={dis} id={Product.product_id} onClick={() => HandleAddCart(Product.product_id)} className="btn btn-primary text-white px-3 rounded-full text-xs font-bold flex items-center gap-2">Add To Card <FaCartPlus /></button>
 
-                                    <a onClick={() => HandleAddWish(Product.product_id)}  className="p-2 hover:bg-purple-200 border-2 border-purple-500 rounded-full text-purple-500">
+                                    <button disabled={disW} onClick={() => HandleAddWish(Product.product_id)} className="btn btn-outline btn-circle">
                                         <FaHeart className="text-base " />
-                                    </a>
+                                    </button>
                                 </div>
 
                             </div>

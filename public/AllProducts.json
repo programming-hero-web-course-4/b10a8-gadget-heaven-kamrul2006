@@ -174,7 +174,7 @@
     "product_title": "Apple iPhone 13 Pro",
     "product_image": "https://images-cdn.ubuy.co.id/64dc1dbacb432b7bec5203e4-open-box-apple-iphone-13-pro-max-a2484.jpg",
     "category": "iPhone",
-    "price": 999,
+    "price": 990,
     "description": "A powerful iPhone with Pro features like 5G connectivity, A15 Bionic, and ProMotion display.",
     "specification": [
       "6.1-inch OLED display",
@@ -208,7 +208,7 @@
     "product_title": "Apple iPhone 14",
     "product_image": "https://istockbd.com/cdn/shop/products/iPhone14PluspriceinBangladesh.jpg?v=1678349977&width=600",
     "category": "iPhone",
-    "price": 799,
+    "price": 795,
     "description": "The latest iPhone with improved camera system and A15 Bionic performance.",
     "specification": [
       "6.1-inch OLED display",
@@ -225,7 +225,7 @@
     "product_title": "Apple iPhone 14 Pro Max",
     "product_image": "https://i.ebayimg.com/images/g/NawAAOSwj4dkghOz/s-l1200.jpg",
     "category": "iPhone",
-    "price": 1099,
+    "price": 1230,
     "description": "The best iPhone with ProMotion display, A16 Bionic chip, and advanced camera features.",
     "specification": [
       "6.7-inch OLED display",
@@ -293,7 +293,7 @@
     "product_title": "Samsung Galaxy Watch 5 Pro",
     "product_image": "https://miro.medium.com/v2/resize:fit:1400/format:webp/1*9l9YsrP7OoLYRJqpTiT7HA.png",
     "category": "Smart Watches",
-    "price": 449,
+    "price": 252,
     "description": "Advanced smartwatch with fitness tracking, GPS, and long battery life, designed for outdoor enthusiasts.",
     "specification": [
       "1.4-inch Super AMOLED display",
@@ -326,7 +326,7 @@
   },
   {
     "product_id": "31",
-    "product_title": "Huawei Watch Buds Smart Watch",
+    "product_title": "Huawei Buds Smart Watch",
     "product_image": "https://cdn.mos.cms.futurecdn.net/iBDrnHdi3Zn3tnaqNfvPjH-1920-80.jpg.webp",
     "category": "Smart Watches",
     "price": 299,
@@ -369,7 +369,7 @@
     "product_title": "iPhone 16",
     "product_image": "https://i.ytimg.com/vi/f13XTEQLBMQ/maxresdefault.jpg",
     "category": "iPhone",
-    "price": 1199,
+    "price": 1099,
     "description": "The latest iPhone 16 with advanced camera system, powerful A-series chip, and sleek design, offering unmatched performance and stunning visuals.",
     "specification": [
       "6.5-inch Super Retina XDR display",
