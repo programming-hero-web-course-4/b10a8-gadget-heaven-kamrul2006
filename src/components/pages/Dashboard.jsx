@@ -69,6 +69,16 @@ const Dashboard = () => {
         setCartList(CardList)
         setItem(CardList)
     }
+    // -------------------------handle Pushc remove------------
+    const handleRemoveAllCart = () => {
+        localStorage.removeItem('cart-list')
+        const storedList = getStoreCartList();
+        const Stored = storedList.map(id => parseInt(id))
+
+        const CardList = allProducts.filter(pro => Stored.includes(parseInt(pro.product_id)));
+        setCartList(CardList)
+        setItem(CardList)
+    }
     // --------------------handle remove Wish-----------------
     const handleRemoveWish = (id) => {
         RemoveWish(id)
@@ -89,13 +99,14 @@ const Dashboard = () => {
         addToStoreCartList(id)
     }
     //----------------------------cost--------------------------
+    let modalCost = []
 
     for (let pr = 0; pr < cartList.length; pr++) {
         tCost += cartList[pr].price || 0
+        modalCost.push(parseInt(cartList[pr].price || 0))
     }
 
-    const Total = tCost
-    console.log(cartList.length)
+    // console.log(cartList.length)
     useEffect(() => {
         if (cartList.length) {
             setDis(false)
@@ -149,7 +160,12 @@ const Dashboard = () => {
 
 
 
-                                <button disabled={dis} onClick={() => document.getElementById('my_modal_5').showModal()} className="px-10 btn-sm rounded-full font-bold btn btn-outline btn-info">Purchase</button>
+                                <button disabled={dis} onClick={() => {
+                                    document.getElementById('my_modal_5').showModal()
+                                    // tCost = 0;
+                                    handleRemoveAllCart()
+                                }
+                                } className="px-10 btn-sm rounded-full font-bold btn btn-outline btn-info">Purchase</button>
                             </div>
                         </div>
 
@@ -196,22 +212,22 @@ const Dashboard = () => {
                         </div>)}
                     </div>}
             </div>
-            <div className="hidden">
-                <Nav cartList={cartList}></Nav>
-            </div>
 
 
             {/* Open the modal using document.getElementById('ID').showModal() method */}
 
 
-            <dialog id="my_modal_5" className="modal modal-bottom sm:modal-middle">
-                <div className="modal-box">
-                    <h3 className="font-bold text-lg">Hello!</h3>
-                    <p className="py-4">Press ESC key or click the button below to close</p>
+            <dialog id="my_modal_5" className="modal modal-middle">
+                <div className=" bg-white px-14 py-4 rounded-3xl">
+                    <img src="https://media.tenor.com/hDY7src9Lw4AAAAj/dear-harsh-beta.gif" className="mx-auto w-28 rounded-full" />
+                    <h3 className="font-bold text-lg text-center mb-3">Payment Successfully</h3>
+                    <hr />
+                    <p className="py-2 text-center font-semibold">Thanks for purchasing Our product. <br />
+                        <span className="text-center text-yellow-500 italic text-lg font-serif">Have A good Day!</span>😉</p>
                     <div className="modal-action">
                         <form method="dialog">
                             {/* if there is a button in form, it will close the modal */}
-                            <Link to={'/'}><button className="btn">Close</button></Link>
+                            <Link to={'/'}><button className="btn rounded-full btn-outline px-28 btn-sm w-full">Close</button></Link>
                         </form>
                     </div>
                 </div>

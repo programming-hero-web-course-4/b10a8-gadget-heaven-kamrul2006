@@ -42,6 +42,7 @@ const Details = () => {
             const stoRedListStr = JSON.stringify(storedList);
             localStorage.setItem('cart-list', stoRedListStr);
             setItem([...item, id])
+            
             toast.success('Product Added in Cart !', {
                 position: "top-center",
                 autoClose: 2000,

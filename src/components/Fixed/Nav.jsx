@@ -20,7 +20,6 @@ const Nav = () => {
     }, [])
 
 
-
     const Links = <>
         <li>  <Link to={'/'}>Home</Link></li>
         <li>  <Link to={'/statistics'}>Statistics</Link></li>
